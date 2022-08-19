@@ -1,0 +1,232 @@
+1. C:\Users\user>echo
+ECHO is on.
+
+2. C:\Users\user>cd C:/
+
+3. C:\>copy
+The syntax of the command is incorrect.
+
+4. C:\Users\user>ping
+
+Usage: ping [-t] [-a] [-n count] [-l size] [-f] [-i TTL] [-v TOS]
+            [-r count] [-s count] [[-j host-list] | [-k host-list]]
+            [-w timeout] [-R] [-S srcaddr] [-c compartment] [-p]
+            [-4] [-6] target_name
+
+Options:
+    -t             Ping the specified host until stopped.
+                   To see statistics and continue - type Control-Break;
+                   To stop - type Control-C.
+    -a             Resolve addresses to hostnames.
+    -n count       Number of echo requests to send.
+    -l size        Send buffer size.
+    -f             Set Don't Fragment flag in packet (IPv4-only).
+    -i TTL         Time To Live.
+    -v TOS         Type Of Service (IPv4-only. This setting has been deprecated
+                   and has no effect on the type of service field in the IP
+                   Header).
+    -r count       Record route for count hops (IPv4-only).
+    -s count       Timestamp for count hops (IPv4-only).
+    -j host-list   Loose source route along host-list (IPv4-only).
+    -k host-list   Strict source route along host-list (IPv4-only).
+    -w timeout     Timeout in milliseconds to wait for each reply.
+    -R             Use routing header to test reverse route also (IPv6-only).
+                   Per RFC 5095 the use of this routing header has been
+                   deprecated. Some systems may drop echo requests if
+                   this header is used.
+    -S srcaddr     Source address to use.
+    -c compartment Routing compartment identifier.
+    -p             Ping a Hyper-V Network Virtualization provider address.
+    -4             Force using IPv4.
+    -6             Force using IPv6
+5.C:\>expand
+Microsoft (R) File Expansion Utility
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+No files specified.
+6.C:\>if
+The syntax of the command is incorrect.
+
+7.C:\>hostname
+DESKTOP-0L37QI4
+
+8.C:\>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 10:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter WiFi:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::7d8c:e65d:4057:66f%6
+   IPv4 Address. . . . . . . . . . . : 172.16.4.187
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 172.16.4.254
+9.C:\>label
+Volume in drive C: has no label
+Volume Serial Number is 725B-5CF6
+Volume label (32 characters, ENTER for none)?
+
+
+
+
+10.C:\>lodctr
+
+
+LODCTR
+       Updates registry values related to performance counters.
+Usage:
+       LODCTR <INI-filename>
+             Installs counter text strings. INI-filename is the name of the
+             initialization file that contains the counter name definitions
+             and explain text for an extensible counter DLL.
+
+       LODCTR /C:<filename>
+             Upgrades counter text strings using <filename>
+
+       LODCTR /H:<filename>
+             Upgrades help text strings using <filename>
+
+       LODCTR /L:<LangID>
+             Specifies the language for the /C and /H commands
+
+       LODCTR /S:<Backup-filename>
+             Saves the current perf registry strings and info to
+             <Backup-filename>
+11.C:\Users\user>
+C:\Users\user>tskill
+Invalid parameter(s)
+Ends a process.
+
+TSKILL processid | processname [/SERVER:servername] [/ID:sessionid | /A] [/V]
+
+  processid           Process ID for the process to be terminated.
+  processname         Process name to be terminated.
+  /SERVER:servername  Server containing processID (default is current).
+                         /ID or /A must be specified when using processname
+                         and /SERVER
+  /ID:sessionid       End process running under the specified session.
+  /A                  End process running under ALL sessions.
+  /V                  Display information about actions being performed.
+
+C:\>logman
+
+Data Collector Set                      Type                          Status
+-------------------------------------------------------------------------------
+
+The command completed successfully.
+12.C:\>logman create
+Argument 'name' is required.
+At least one of the following arguments is required:
+  counter
+  trace
+  alert
+  cfg
+  providers
+
+Error:
+The parameter is incorrect.
+
+13.C:\>makecab
+Cabinet Maker - Lossless Data Compression Tool
+
+MAKECAB [/V[n]] [/D var=value ...] [/L dir] source [destination]
+MAKECAB [/V[n]] [/D var=value ...] /F directive_file [...]
+
+  source         File to compress.
+  destination    File name to give compressed file.  If omitted, the
+                 last character of the source file name is replaced
+                 with an underscore (_) and used as the destination.
+  /F directives  A file with MakeCAB directives (may be repeated). Refer to
+                 Microsoft Cabinet SDK for information on directive_file.
+  /D var=value   Defines variable with specified value.
+  /L dir         Location to place destination (default is current directory).
+  /V[n]          Verbosity level (1..3).
+
+14.C:\>md
+The syntax of the command is incorrect.
+
+15.C:\Users\user>msg
+Send a message to a user.
+
+MSG {username | sessionname | sessionid | @filename | *}
+    [/SERVER:servername] [/TIME:seconds] [/V] [/W] [message]
+
+  username            Identifies the specified username.
+  sessionname         The name of the session.
+  sessionid           The ID of the session.
+  @filename           Identifies a file containing a list of usernames,
+                      sessionnames, and sessionids to send the message to.
+  *                   Send message to all sessions on specified server.
+  /SERVER:servername  server to contact (default is current).
+  /TIME:seconds       Time delay to wait for receiver to acknowledge msg.
+  /V                  Display information about actions being performed.
+  /W                  Wait for response from user, useful with /V.
+  message             Message to send.  If none specified, prompts for it
+                      or reads from stdin.
+16.C:\Users\user>path
+PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\user\AppData\Local\Microsoft\WindowsApps;
+
+17.C:\Users\user>prompt
+
+C:\Users\user>quser
+ USERNAME              SESSIONNAME        ID  STATE   IDLE TIME  LOGON TIME
+>user                  console             6  Active       3:11  19/08/2022 8:03
+
+18.C:\Users\user>rd
+The syntax of the command is incorrect.
+19.C:\Users\user>sc config
+DESCRIPTION:
+        Modifies a service entry in the registry and Service Database.
+USAGE:
+        sc <server> config [service name] <option1> <option2>...
+
+OPTIONS:
+NOTE: The option name includes the equal sign.
+      A space is required between the equal sign and the value.
+      To remove the dependency, use a single / as dependency value.
+ type= <own|share|interact|kernel|filesys|rec|adapt|userown|usershare>
+ start= <boot|system|auto|demand|disabled|delayed-auto>
+ error= <normal|severe|critical|ignore>
+ binPath= <BinaryPathName to the .exe file>
+ group= <LoadOrderGroup>
+ tag= <yes|no>
+ depend= <Dependencies(separated by / (forward slash))>
+ obj= <AccountName|ObjectName>
+ DisplayName= <display name>
+ password= <password>
+
+20.C:\Users\user>tracert
+
+Usage: tracert [-d] [-h maximum_hops] [-j host-list] [-w timeout]
+               [-R] [-S srcaddr] [-4] [-6] target_name
+
+Options:
+    -d                 Do not resolve addresses to hostnames.
+    -h maximum_hops    Maximum number of hops to search for target.
+    -j host-list       Loose source route along host-list (IPv4-only).
+    -w timeout         Wait timeout milliseconds for each reply.
+    -R                 Trace round-trip path (IPv6-only).
+    -S srcaddr         Source address to use (IPv6-only).
+    -4                 Force using IPv4.
+    -6                 Force using IPv6.
