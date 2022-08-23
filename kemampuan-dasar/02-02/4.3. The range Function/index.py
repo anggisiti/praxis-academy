@@ -1,10 +1,16 @@
 for i in range(5):
-        print(i)
+    print(i)
 
-a = list(range (5,10))
-print(a)
+    list(range(5, 10))
 
-def buah():
-        print(f"ini buah mangga rasanya{c}")
+    
+a = ['Mary', 'had', 'a', 'little', 'lamb']
+for i in range(len(a)):
+    print(i, a[i])
 
-buah("pahit")
+    for num in range(2, 10):
+        if num % 2 == 0:
+            print("Found an even number", num)
+            continue
+            print("Found an odd number", num)
+            
