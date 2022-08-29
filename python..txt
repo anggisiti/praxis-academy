@@ -1,0 +1,7 @@
+Salah satu cara untuk mengingat cara kerja irisan adalah dengan menganggap indeks sebagai penunjuk antar karakter, dengan tepi kiri karakter pertama diberi nomor 0. Kemudian tepi kanan karakter terakhir dari string n karakter memiliki indeks n , misalnya:
+
+ +---+---+---+---+---+---+
+ | P | y | t | h | o | n |
+ +---+---+---+---+---+---+
+ 0   1   2   3   4   5   6
+-6  -5  -4  -3  -2  -1

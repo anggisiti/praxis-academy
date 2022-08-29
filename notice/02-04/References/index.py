@@ -1,23 +1,26 @@
-print('Simple Assignment')
-shoplist = ['apple', 'mango', 'carrot', 'banana']
-# mylist is just another name pointing to the same object!
-mylist = shoplist
+year = 2016
+event = 'Referendum'
+f'Results of the {year} {event}'
 
-# I purchased the first item, so I remove it from the list
-del shoplist[0]
+yes_votes = 42_572_654
+no_votes = 43_132_495
+percentage = yes_votes / (yes_votes + no_votes)
+'{:-9} YES votes  {:2.2%}'.format(yes_votes, percentage)
 
-print('shoplist is', shoplist)
-print('mylist is', mylist)
-# Notice that both shoplist and mylist both print
-# the same list without the 'apple' confirming that
-# they point to the same object
+s = 'Hello, world.'
+str(s)
 
-print('Copy by making a full slice')
-# Make a copy by doing a full slice
-mylist = shoplist[:]
-# Remove first item
-del mylist[0]
+repr(s)
+str(1/7)
+x = 10 * 3.25
+y = 200 * 200
+s = 'The value of x is ' + repr(x) + ', and y is ' + repr(y) + '...'
+print(s)
 
-print('shoplist is', shoplist)
-print('mylist is', mylist)
-# Notice that now the two lists are different
+# The repr() of a string adds string quotes and backslashes:
+hello = 'hello, world\n'
+hellos = repr(hello)
+print(hellos)
+
+# The argument to repr() may be any Python object:
+repr((x, y, ('spam', 'eggs')))
