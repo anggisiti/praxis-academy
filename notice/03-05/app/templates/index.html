@@ -3,29 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
-</head>
+    <style>
+        table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+    
+</head> 
 <body>
     <div>
-        <hl>Ini request</hl>
-        <label for="">name</label>
+        <h1> ini request </h1>
         <form action="" method="post">
+            <label for="">nama</label>
             <input name="nama" type="text" required>
-            <input name="detail" type="text" required>
             <label for="">detail</label>
+            <input name="detail" type="text" required>
             <button type="submit">kirim</button>
-            
-        </form>
 
+        </form>
+        
         <hr>
-        <h1>Ini response</hl>
-        <br>
+        <h1>ini respons</h1>
+
         <table>
             <tr>
                 <th>id</th>
-                <th>name</th>
-                <th>action</th>
+                <th>nama</th>
+                <th>actions</th>
             </tr>
             {% for d in context %}
             <tr>
@@ -35,29 +53,18 @@
                     <a href="/detail/{{d[0]}}">
                         <button>detail</button>
                     </a>
-                    <a href="">
+                    <a href="/update/{{d[0]}}">
                         <button>update</button>
                     </a>
                     <a href="/delete/{{d[0]}}">
                         <button>delete</button>
                     </a>
                 </td>
-                <!-- <td>{{d[0]}}</td> -->
             </tr>
-                {% endfor %}
+            {% endfor %}
         </table>
-        <!-- <div> -->
-        <table></table>
-                <thead></thead>
-            <tr>id</tr>
-        <thead></thead>
-        {% for d in context %}
-        <ul>
-            <li>{{d}}</li>
-        </ul>
-        {% endfor%}
-</div>
-
-
-</body>
+            
+    
+    </div>
+ </body>
 </html>
