@@ -9,8 +9,7 @@ def index():
         host="localhost",
         database="contoh",
         user="postgres",
-        password="anggisiti"
-    )
+        password="anggisiti")
     curs = conn.cursor()
     if request.method == "POST":
         nama = request.form.get("nama")

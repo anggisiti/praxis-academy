@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>ini daftar makanan</title>
     <style>
         table {
   font-family: arial, sans-serif;
@@ -13,9 +13,9 @@
 }
 
 td, th {
-  border: 12px solid #33e972;
+  border: 8px solid #2181d0;
   text-align: left;
-  padding: 17px;
+  padding: 12px;
 }
 
 tr:nth-child(even) {
@@ -26,24 +26,36 @@ tr:nth-child(even) {
 </head> 
 <body>
     <div>
-        <h1> ini halaman aing </h1>
+        <h1> ini list makanan </h1>
         <form action="" method="post">
             <label for="">nama</label>
             <input name="nama" type="text" required>
             <label for="">detail</label>
             <input name="detail" type="text" required>
+            <label for="">recommended</label>
+            <input name="pelanggan" type="text" required>
             <button type="submit">kirim</button>
+
+<style>
+    table, th, td {
+        border:6px solid green;
+    }
+</style>
 
         </form>
         
         <hr>
-        <h1>respons</h1>
-
+        <h1>ini daftar makanan anggi</h1>
+        <br>
         <table>
+            <table style="width:600px">
+
             <tr>
                 <th>id</th>
                 <th>nama</th>
-                <th>actions</th>
+                <th>pesanan</th>
+                <th>jumlah</th>
+                <th>diskon</th>
             </tr>
             {% for d in context %}
             <tr>
@@ -58,7 +70,7 @@ tr:nth-child(even) {
                     </a>
                     <a href="/delete/{{d[0]}}">
                         <button class="btn btn-danger">delete</button>
-                    </a>
+                    </a> 
                 </td>
             </tr>
             {% endfor %}
